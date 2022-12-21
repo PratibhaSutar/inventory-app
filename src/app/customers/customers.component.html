@@ -1,0 +1,43 @@
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1>Customers</h1>            
+
+    </div>
+
+    <div class="col-lg-6">
+        <form [formGroup]="formdata" (ngSubmit)="save(formdata.value)">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" formControlName="name" />
+        </div>
+        <br/>
+        <div class="form-group">
+            <input type="submit"  value="Save" class="btn btn-success"/>
+        </div>
+    </form>
+
+        </div>
+        </div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="table-scrollable">
+                <table class="table">
+
+                <tr>
+                    <th>Actions</th>
+                    <th>Sr.No</th>
+                    <th>Image</th>
+                    <th>categories</th>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" class="btn btn-outline-success">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+            </table>
+            </div>
+    </div>
+</div>
+       
