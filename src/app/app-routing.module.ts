@@ -2,9 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CustomersComponent } from './customers/customers.component';
 import { HomeComponent } from './home/home.component';
+import { PrintpurchaseComponent } from './printpurchase/printpurchase.component';
+import { PrintsaleComponent } from './printsale/printsale.component';
 import { ProductsComponent } from './products/products.component';
 import { PurchaseComponent } from './purchase/purchase.component';
-import { SalesComponent } from './sales/sales.component';
+import { SaleComponent } from './sale/sale.component';
 import { SuppliersComponent } from './suppliers/suppliers.component';
 
 const routes: Routes = [
@@ -14,7 +16,10 @@ const routes: Routes = [
   {path:"customers", component:CustomersComponent},
   {path:"products", component:ProductsComponent},
   {path:"purchase", component:PurchaseComponent},
-  {path:"sales", component:SalesComponent}
+  {path:"printpurchase/:id", component:PrintpurchaseComponent},
+  {path:"sale", component:SaleComponent},
+  {path:"printsale/:id", component:PrintsaleComponent}
+
 ];
 
 @NgModule({

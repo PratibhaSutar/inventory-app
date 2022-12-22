@@ -8,8 +8,11 @@ import { SuppliersComponent } from './suppliers/suppliers.component';
 import { CustomersComponent } from './customers/customers.component';
 import { ProductsComponent } from './products/products.component';
 import { PurchaseComponent } from './purchase/purchase.component';
-import { SalesComponent } from './sales/sales.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { SaleComponent } from './sale/sale.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { PrintpurchaseComponent } from './printpurchase/printpurchase.component';
+import { PrintsaleComponent } from './printsale/printsale.component';
 
 @NgModule({
   declarations: [
@@ -19,11 +22,15 @@ import { ReactiveFormsModule } from '@angular/forms';
     CustomersComponent,
     ProductsComponent,
     PurchaseComponent,
-    SalesComponent  ],
+    SaleComponent,
+    PrintpurchaseComponent,
+    PrintsaleComponent  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule
     
   ],
   providers: [],

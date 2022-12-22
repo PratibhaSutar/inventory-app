@@ -1,43 +1,56 @@
-
-<div class="row">
-    <div class="col-lg-12">
-        <h1>Products</h1>            
-
-    </div>
-
-    <div class="col-lg-6">
-        <div class="form-group">
-            <label>Name</label>
-            <input type="text" class="form-control"/>
-        </div>
-        <br/>
-        <div class="form-group">
-            <input type="submit" value="Save" class="btn btn-success"/>
-        </div>
-        </div>
-        
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="table-scrollable">
-                        <table class="table">
-        
-                        <tr>
-                            <th>Actions</th>
-                            <th>Sr.No</th>
-                            <th>Image</th>
-                            <th>categories</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <button type="button" class="btn btn-outline-success">Edit</button>
-                                <button type="button" class="btn btn-outline-danger">Delete</button>
-                            </td>
-                        </tr>
-                    </table>
-                    </div>
+<div id="content-wrapper" class="d-flex flex-column">
+    <div id="content">
+        <div class="container-fluid">
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                <h1 class="h3 mb-0 text-gray-800">Products</h1>
             </div>
-        
+            <div class="row">
+                <form [formGroup]="product" (ngSubmit)="save(product.value)">
+                    <input type="hidden" formControlName="id"/>
+                    <div class="col-lg-12">
+                        <label for="" class="form-label">Name* </label>
+                        <input type="text" class="form-control" formControlName="name" />
+                    </div>
+                    <div class="col-lg-12">
+                        <label for="" class="form-label">GST %* </label>
+                        <input type="text" class="form-control" formControlName="gstpercent" />
+                    </div>
+                    <div class="col-lg-12">
+                        <label for="" class="form-label">Sale Price With GST* </label>
+                        <input type="text" class="form-control" formControlName="saleprice" />
+                    </div>
+                    <div class="col-lg-12 mt-2">
+                        <input type="submit" [disabled]="!product.valid" value="Submit" class="btn btn-success btn-sm" />
+                    </div>
+                </form>
+            </div>
+            <div class="row mt-5">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Name</th>
+                                <th>GST Percent</th>
+                                <th>Sale Price With GST</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let product of products;let i =index;">
+                                <td>{{i +1}}</td>
+                                <td>{{product.name}}</td>
+                                <td>{{product.gstpercent}}</td>
+                                <td>{{product.saleprice}}</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary" (click)="edit(product)">Edit</button>&nbsp;
+                                    <button class="btn btn-sm btn-danger" (click)="delete(product)">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-        
-   
+    </div>
+</div>
