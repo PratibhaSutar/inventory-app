@@ -1,33 +1,10 @@
 {
-  "suppliers": [
-    {
-      "id": "Thu Dec 22 2022 12:09:11 GMT+0530 (India Standard Time)",
-      "name": "Pratibha"
-    }
-  ],
-  "customers": [
-    {
-      "id": "Thu Dec 22 2022 12:12:13 GMT+0530 (India Standard Time)",
-      "name": "Abhijit Customer"
-    }
-  ],
-  "products": [
-    {
-      "id": "Thu Dec 22 2022 12:13:24 GMT+0530 (India Standard Time)",
-      "name": "Pen",
-      "gstpercent": "18",
-      "saleprice": "118"
-    },
-    {
-      "id": "Thu Dec 22 2022 12:13:30 GMT+0530 (India Standard Time)",
-      "name": "Notebook",
-      "gstpercent": "18",
-      "saleprice": "236"
-    }
-  ],
+  "suppliers": [],
+  "customers": [],
+  "products": [],
   "purchases": [
     {
-      "id":"34324sfdsfsdfsd",
+      "id": 1,
       "date": "2022-12-22",
       "supplierid": "Thu Dec 22 2022 12:09:11 GMT+0530 (India Standard Time)",
       "total": 23000,
@@ -44,8 +21,7 @@
           "purchaserate": "150",
           "total": 15000
         }
-      ],
-      "id": 1
+      ]
     },
     {
       "id": "Thu Dec 22 2022 13:58:28 GMT+0530 (India Standard Time)",
