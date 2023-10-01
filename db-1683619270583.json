@@ -259,34 +259,6 @@
           "total": 36
         }
       ]
-    },
-    {
-      "id": 29997,
-      "date": "Sun Oct 01 2023 15:16:55 GMT+0530 (India Standard Time)",
-      "supplierid": "Fri Dec 23 2022 02:33:24 GMT+0530 (India Standard Time)",
-      "total": 50,
-      "products": [
-        {
-          "productid": "Fri Dec 23 2022 02:46:46 GMT+0530 (India Standard Time)",
-          "quantity": "1",
-          "purchaserate": "50",
-          "total": 50
-        }
-      ]
-    },
-    {
-      "id": 16931,
-      "date": "Sun Oct 01 2023 15:17:23 GMT+0530 (India Standard Time)",
-      "supplierid": "Fri Dec 23 2022 02:33:24 GMT+0530 (India Standard Time)",
-      "total": 3,
-      "products": [
-        {
-          "productid": "Fri Dec 23 2022 02:46:46 GMT+0530 (India Standard Time)",
-          "quantity": "1",
-          "purchaserate": "3",
-          "total": 3
-        }
-      ]
     }
   ],
   "sales": [
@@ -425,42 +397,6 @@
           "quantity": "2",
           "salerate": 100,
           "total": 200
-        }
-      ]
-    },
-    {
-      "id": 16636,
-      "date": "Sun Oct 01 2023 15:13:46 GMT+0530 (India Standard Time)",
-      "customerid": "Fri Dec 23 2022 02:35:36 GMT+0530 (India Standard Time)",
-      "saleas": "With GST",
-      "total": 250,
-      "products": [
-        {
-          "productid": "Fri Dec 23 2022 02:46:46 GMT+0530 (India Standard Time)",
-          "quantity": "1",
-          "salerate": 50,
-          "total": 50
-        },
-        {
-          "productid": "Fri Dec 23 2022 02:48:23 GMT+0530 (India Standard Time)",
-          "quantity": "2",
-          "salerate": 100,
-          "total": 200
-        }
-      ]
-    },
-    {
-      "id": 70205,
-      "date": "Sun Oct 01 2023 15:14:41 GMT+0530 (India Standard Time)",
-      "customerid": "Fri Dec 23 2022 02:35:36 GMT+0530 (India Standard Time)",
-      "saleas": "With GST",
-      "total": 100,
-      "products": [
-        {
-          "productid": "Fri Dec 23 2022 02:48:23 GMT+0530 (India Standard Time)",
-          "quantity": "1",
-          "salerate": 100,
-          "total": 100
         }
       ]
     }
